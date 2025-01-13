@@ -1,0 +1,23 @@
+{
+  "Name": "CustomKeyVaultAndStorageRole",
+  "IsCustom": true,
+  "Description": "Custom role combining Key Vault Secrets User and Storage Table Data Contributor permissions",
+  "Actions": [
+    "Microsoft.Storage/storageAccounts/tableServices/tables/read",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/write",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/delete"
+  ],
+  "DataActions": [
+    "Microsoft.Storage/storageAccounts/tableServices/tables/entities/read",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/entities/write",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/entities/delete",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/entities/add/action",
+    "Microsoft.Storage/storageAccounts/tableServices/tables/entities/update/action",
+    "Microsoft.KeyVault/vaults/secrets/getSecret/action",
+    "Microsoft.KeyVault/vaults/secrets/readMetadata/action"
+  ],
+  "NotActions": [],
+  "AssignableScopes": [
+    "/subscriptions/{subscription-id}"
+  ]
+}

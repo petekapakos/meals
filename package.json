@@ -11,6 +11,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "@azure/identity": "^4.5.0",
     "@remix-run/express": "^2.15.2",
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
@@ -19,6 +21,7 @@
     "express": "^4.19.2",
     "isbot": "^4.1.0",
     "morgan": "^1.10.0",
+    "openai": "^4.77.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
